@@ -1,0 +1,2 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE3,"U de Mann-Whitney: tasa, resto frente a Lima y Callao",las distribuciones son iguales,13395346,NA,"< 0,001",NA,NA,Se rechaza H0

@@ -1,0 +1,2 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE3,"z para dos proporciones: tasa mayor a 10 %, resto menos Lima y Callao",diferencia de proporciones = 0,43.643,NA,"< 0,001",0.418,0.459,Se rechaza H0

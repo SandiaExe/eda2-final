@@ -1,0 +1,2 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE3,"t de Welch: tasa media, resto menos Lima y Callao",diferencia de medias = 0,41.672,3444.9,"< 0,001",1.229,1.35,Se rechaza H0
