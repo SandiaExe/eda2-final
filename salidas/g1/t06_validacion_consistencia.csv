@@ -1,0 +1,8 @@
+regla,casos
+Valores faltantes en alguna columna,0
+Montos o tasa menores o iguales a cero,0
+Plazo fuera de 60 a 300 meses,0
+"Cuota inicial menor a 7,5 % de la vivienda",0
+Financiamiento mayor a 90 % de la vivienda,6
+Crédito + cuota inicial mayor al valor de la vivienda,3
+Fecha de desembolso fuera de 2024,0

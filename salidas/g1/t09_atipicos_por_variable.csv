@@ -1,0 +1,6 @@
+variable,limite_inferior,limite_superior,atipicos_bajos,atipicos_altos,porcentaje
+TASA,7.455000000000001,11.575,1,612,7.2
+MONTO_CREDITO,-66400,432800,0,0,0
+MONTO_CUOTA_INICIAL,-15490,87150,0,475,5.5
+PLAZOS,90,330,283,0,3.3
+MONTO_VALOR_VIVIENDA,-21000,503000,0,0,0
