@@ -38,7 +38,7 @@ decisiones <- tibble(
                           "Normalidad y homogeneidad", "Casos por categoría >= 5",
                           "Normalidad y homogeneidad", "Frecuencias esperadas >= 5"),
   cumple = c("No", "Sí", "No", "Sí", "No", "Sí"),
-  prueba_de_decision = c("Wilcoxon para una muestra, con t por el tamaño de muestra",
+  prueba_de_decision = c("t para una muestra por el tamaño de muestra, con Wilcoxon como respaldo",
                          "z para una proporción",
                          "U de Mann-Whitney, con t de Welch como apoyo",
                          "z para dos proporciones", "Kruskal-Wallis",
@@ -47,8 +47,10 @@ decisiones <- tibble(
 guardar_tabla(decisiones, "decision_por_supuestos", DIR_G3)
 
 # Interpretación: la tasa no cumple normalidad ni homogeneidad en ningún análisis, por
-# lo que las pruebas no paramétricas sustentan las conclusiones sobre ella. Las
-# pruebas paramétricas llegan a la misma decisión, lo que da solidez al resultado.
+# lo que las pruebas no paramétricas sustentan las comparaciones entre grupos. Frente a
+# un valor de referencia decide t, válida por el tamaño de muestra, porque Wilcoxon
+# supone una simetría que la tasa no cumple. Las pruebas paramétricas y no paramétricas
+# llegan a la misma decisión, lo que da solidez al resultado.
 
 
 # ----------------------------------------------------------------------------

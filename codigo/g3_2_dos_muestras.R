@@ -24,7 +24,7 @@ guardar_grafico(grafico_qq_zona, "f16_qq_tasa_zona", ancho = 9, alto = 4.2,
 
 # Interpretación: se rechaza la normalidad en ambas zonas (W = 0,7688 y W = 0,8210;
 # p < 0,001). El gráfico Q-Q muestra colas derechas pesadas y escalones, porque
-# muchas tasas se repiten en valores redondos, como 15 % fuera de Lima.
+# muchas tasas se repiten en valores redondos, como 10 % y 12 % fuera de Lima.
 
 homogeneidad_zona <- prueba_levene(ncmv$TASA, ncmv$ZONA)
 guardar_tabla(homogeneidad_zona, "homogeneidad_tasa_zona", DIR_G3)

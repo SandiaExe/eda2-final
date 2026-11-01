@@ -122,11 +122,13 @@ guardar_tabla <- function(tabla, nombre, directorio = DIR_G1) {
   print(as.data.frame(tabla), row.names = FALSE)
 }
 
-# Guarda un gráfico de ggplot2 en PNG.
+# Guarda un gráfico de ggplot2 en PNG. El título se omite en el archivo porque el
+# informe lo presenta en la leyenda de la figura, según el formato APA.
 guardar_grafico <- function(grafico, nombre, ancho = 8, alto = 5,
                             directorio = DIR_G1) {
   dir.create(directorio, recursive = TRUE, showWarnings = FALSE)
-  ggsave(file.path(directorio, paste0(nombre, ".png")), grafico,
+  ggsave(file.path(directorio, paste0(nombre, ".png")),
+         grafico + labs(title = NULL),
          width = ancho, height = alto, dpi = 300, bg = "white")
 }
 
