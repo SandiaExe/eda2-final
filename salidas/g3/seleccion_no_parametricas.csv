@@ -1,0 +1,6 @@
+prueba,aplicada,motivo
+Chi-cuadrado,Sí,Asociación entre dos variables cualitativas (OE5)
+Wilcoxon,Sí,Comparar la tasa con un valor de referencia (OE2)
+U de Mann-Whitney,Sí,Comparar la tasa entre dos grupos independientes (OE3)
+Kruskal-Wallis,Sí,Comparar la tasa entre cuatro grupos independientes (OE4)
+Friedman,No,Requiere medidas repetidas y cada crédito se observa una sola vez

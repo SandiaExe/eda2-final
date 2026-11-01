@@ -1,0 +1,7 @@
+objetivo,supuesto_verificado,cumple,prueba_de_decision
+"OE2, media",Normalidad,No,"Wilcoxon para una muestra, con t por el tamaño de muestra"
+"OE2, proporción",Casos por categoría >= 5,Sí,z para una proporción
+"OE3, medias",Normalidad y homogeneidad,No,"U de Mann-Whitney, con t de Welch como apoyo"
+"OE3, proporciones",Casos por categoría >= 5,Sí,z para dos proporciones
+OE4,Normalidad y homogeneidad,No,Kruskal-Wallis
+OE5,Frecuencias esperadas >= 5,Sí,Chi-cuadrado de independencia

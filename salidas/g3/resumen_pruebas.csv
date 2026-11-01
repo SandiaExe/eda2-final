@@ -1,0 +1,14 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE2,"t para una muestra: BCRP, promedio 2024 (saldos)","media = 7,353",182.7,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: BCRP, promedio 2024 (saldos)","mediana = 7,353",36683285,NA,"< 0,001",NA,NA,Se rechaza H0
+OE2,"t para una muestra: SBS, enero de 2024","media = 9,100",52.023,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: SBS, enero de 2024","mediana = 9,100",28712644.5,NA,"< 0,001",NA,NA,Se rechaza H0
+OE2,"t para una muestra: SBS, octubre de 2024","media = 8,400",104.387,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: SBS, octubre de 2024","mediana = 8,400",36493938.5,NA,"< 0,001",NA,NA,Se rechaza H0
+OE2,z para una proporción: créditos fuera de Lima y Callao,"p = 0,6433",-62.078,NA,"< 0,001",0.312,0.332,Se rechaza H0
+OE3,"t de Welch: tasa media, resto menos Lima y Callao",diferencia de medias = 0,41.672,3444.9,"< 0,001",1.229,1.35,Se rechaza H0
+OE3,"U de Mann-Whitney: tasa, resto frente a Lima y Callao",las distribuciones son iguales,13395346,NA,"< 0,001",NA,NA,Se rechaza H0
+OE3,"z para dos proporciones: tasa mayor a 10 %, resto menos Lima y Callao",diferencia de proporciones = 0,43.643,NA,"< 0,001",0.418,0.459,Se rechaza H0
+OE4,ANOVA de un factor: tasa según tipo de IFI,las medias de los cuatro tipos son iguales,3850.747,3,"< 0,001",NA,NA,Se rechaza H0
+OE4,Kruskal-Wallis: tasa según tipo de IFI,las distribuciones de los cuatro tipos son iguales,2014.879,3,"< 0,001",NA,NA,Se rechaza H0
+OE5,Chi-cuadrado de independencia: tipo de IFI y zona,el tipo de IFI y la zona son independientes,900.453,3,"< 0,001",NA,NA,Se rechaza H0
