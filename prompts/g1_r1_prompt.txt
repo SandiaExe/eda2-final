@@ -1,0 +1,39 @@
+[ROL]
+Actúa como estadístico/a y científico/a de datos con experiencia docente universitaria, especializado/a en la exploración inicial y la documentación de conjuntos de datos administrativos en R.
+
+[CONTEXTO]
+El Fondo MIVIVIENDA S.A. (FMV) es una empresa estatal peruana que funciona como banco de segundo piso: canaliza créditos hipotecarios para vivienda a través de instituciones financieras intermediarias (IFI). Se estudian las colocaciones de 2024, con énfasis en la tasa de interés del Nuevo Crédito Mivivienda, codificado como NMIV. Los datos son reales y públicos. Esta es la parte «Descripción del dataset» de la etapa «Preparación y exploración de datos» de un trabajo universitario de Análisis Exploratorio de Datos II.
+
+[DATOS]
+Utiliza el archivo adjunto «Colocaciones_de_crédito_Mivivienda_2024.csv». Es un archivo CSV (separador punto y coma, con fila de encabezado) con 14 columnas, y puede contener filas vacías. Usa también el diccionario adjunto «DiccionarioDatos_Colocaciones_Credito_Mivivienda_0.xlsx». Las columnas son:
+- FECHA_DESEMBOLSO (numérica, formato aaaammdd): Fecha del desembolso del crédito.
+- PRODUCTO (cualitativa nominal): Producto del FMV (NMIV, FCTP o S-CRC).
+- DEPARTAMENTO, PROVINCIA, DISTRITO (cualitativas nominales): Ubicación de la vivienda.
+- UBIGEO (código de 6 dígitos): Código geográfico; debe leerse como texto.
+- IFI (cualitativa nominal): Entidad que otorgó el crédito.
+- TIPO_IFI (cualitativa nominal): Tipo de entidad.
+- MONTO_CREDITO, MONTO_CUOTA_INICIAL, MONTO_VALOR_VIVIENDA (numéricas continuas): Montos en soles.
+- PLAZOS (numérica discreta): Plazo del crédito en meses.
+- TASA (numérica continua): Tasa de interés en porcentaje.
+- FECHA_CORTE (numérica, formato aaaammdd): Fecha de corte de la información.
+
+[SUPUESTOS]
+- Solo se describe el archivo: no modifiques ni elimines datos en esta parte.
+- Una fila vacía es aquella en la que todas las columnas están vacías.
+- Para comparar productos, cuenta cada registro una sola vez (sin duplicados exactos).
+- Usa únicamente técnicas básicas de exploración vistas en un curso de análisis exploratorio.
+- Señala cualquier diferencia entre el diccionario de datos y el archivo. Cita únicamente fuentes que puedas verificar.
+
+[TAREA]
+1. Crea un script de configuración común «codigo/00_configuracion.R» con: un vector de paquetes (readr, dplyr, tidyr, ggplot2, scales); una función que instale los faltantes y los cargue; constantes en mayúsculas para rutas, nivel de significancia α = 0.05, coeficiente de Tukey 1.5, producto de estudio, departamentos de Lima y Callao, condiciones del producto, variables numéricas y colores; y funciones para leer el CSV, detectar filas vacías, calcular los límites de Tukey, guardar tablas y guardar gráficos, además de un tema común para ggplot2.
+2. Crea el script «codigo/g1_r1_descripcion_dataset.R», que cargue la configuración, lea el archivo y reporte en una tabla sus filas, columnas, filas vacías y filas con información.
+3. Con un bucle sobre las columnas, construye una ficha con el nombre de cada variable, su tipo en R, su tipo estadístico, sus valores faltantes y sus valores distintos.
+4. Elabora una tabla por producto con el número de créditos, el porcentaje, la tasa mediana y el valor mediano de la vivienda.
+5. Construye un gráfico de barras horizontales de los créditos por producto, con cantidades y porcentajes en las etiquetas, usando coma decimal.
+6. Comenta qué implica cada resultado para la limpieza y para la delimitación del estudio.
+
+[FORMATO DE SALIDA]
+Entrega tres productos:
+(a) El código R completo y ejecutable de principio a fin desde la carpeta raíz del proyecto, dividido en secciones numeradas con encabezados de comentario. Debe verificar si los paquetes necesarios están instalados y, si no lo están, instalarlos y luego cargarlos, de modo que funcione sin pasos adicionales. Todos los gráficos deben construirse con el paquete ggplot2. Debe usar estructuras secuenciales, condicionales y repetitivas, funciones, variables, constantes y arreglos.
+(b) Las tablas en CSV y los gráficos en PNG, guardados en «salidas/g1/».
+(c) La interpretación de cada resultado dentro del mismo código R, escrita como comentarios (#) inmediatamente después de cada bloque de cálculo o de gráfico, en español.

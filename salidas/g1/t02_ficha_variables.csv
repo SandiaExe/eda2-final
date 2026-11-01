@@ -1,0 +1,15 @@
+variable,tipo_en_R,tipo_estadistico,valores_faltantes,valores_distintos
+FECHA_DESEMBOLSO,numeric,Temporal (aaaammdd),0,204
+PRODUCTO,character,Cualitativa nominal,0,3
+DEPARTAMENTO,character,Cualitativa nominal,0,25
+PROVINCIA,character,Cualitativa nominal,0,70
+DISTRITO,character,Cualitativa nominal,0,217
+UBIGEO,character,Cualitativa nominal (código),0,222
+IFI,character,Cualitativa nominal,0,16
+TIPO_IFI,character,Cualitativa nominal,0,4
+MONTO_CREDITO,numeric,Cuantitativa continua (S/),0,6636
+MONTO_CUOTA_INICIAL,numeric,Cuantitativa continua (S/),0,4533
+PLAZOS,numeric,Cuantitativa discreta (meses),0,121
+TASA,numeric,Cuantitativa continua (%),0,398
+MONTO_VALOR_VIVIENDA,numeric,Cuantitativa continua (S/),0,4122
+FECHA_CORTE,numeric,Temporal (aaaammdd),0,1
