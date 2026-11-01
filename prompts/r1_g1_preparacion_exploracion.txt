@@ -1,0 +1,41 @@
+[ROL]
+Actúa como estadístico/a y científico/a de datos con experiencia docente universitaria, especializado/a en la preparación y exploración de datos administrativos en R.
+[CONTEXTO]
+El Fondo MIVIVIENDA S.A. (FMV), empresa estatal peruana que funciona como banco de segundo piso, canaliza créditos hipotecarios para vivienda a través de instituciones financieras intermediarias (IFI). Queremos analizar si la tasa de interés del Nuevo Crédito Mivivienda (NCMV) de 2024 cambia según el tipo de IFI y la zona geográfica (Lima y Callao / resto del país). Los datos son reales y públicos. Esta primera etapa del trabajo corresponde a la preparación y exploración de datos.
+
+[DATOS]
+Utiliza el archivo adjunto «Colocaciones_de_crédito_Mivivienda_2024.csv» y su diccionario «DiccionarioDatos_Colocaciones_Credito_Mivivienda_0.xlsx». Es un archivo CSV (separador punto y coma, con fila de encabezado) con 14 columnas. Hemos notado que tiene filas vacías y registros duplicados:
+- FECHA_DESEMBOLSO (fecha numérica aaaammdd): Fecha de desembolso del crédito.
+- PRODUCTO (cualitativa nominal): Producto del FMV; NMIV es el NCMV.
+- DEPARTAMENTO, PROVINCIA, DISTRITO (cualitativas nominales): Ubicación de la vivienda.
+- UBIGEO (código de 6 dígitos): Código geográfico; debe leerse como texto.
+- IFI (cualitativa nominal): Entidad que otorgó el crédito.
+- TIPO_IFI (cualitativa nominal): Tipo de entidad.
+- MONTO_CREDITO (numérica continua): Monto del crédito (soles).
+- MONTO_CUOTA_INICIAL (numérica continua): Cuota inicial (soles).
+- PLAZOS (numérica discreta): Plazo del crédito (meses).
+- TASA (numérica continua): Tasa de interés (%).
+- MONTO_VALOR_VIVIENDA (numérica continua): Valor de la vivienda (soles).
+- FECHA_CORTE (fecha numérica aaaammdd): Fecha de corte de la información.
+
+[SUPUESTOS]
+- Nivel de significancia α = 0.05 y confianza del 95 % para las etapas posteriores. Cada fila es un crédito.
+- Elimina las filas vacías y los duplicados exactos, y conserva solo PRODUCTO = NMIV, porque la fuente indica que los productos deben analizarse por separado.
+- Crea ZONA a partir de DEPARTAMENTO (LIMA y CALLAO frente al resto) y comprueba si el resultado cambia al usar Lima Metropolitana.
+- Valida los datos con las condiciones del producto: plazo de 60 a 300 meses, cuota inicial mínima de 7,5 % y financiamiento máximo de 90 %. Son las condiciones publicadas en 2025, así que aclara que pueden no coincidir con las de 2024, y redondea los porcentajes a 2 decimales antes de comparar.
+- Detecta los valores atípicos con la regla de Tukey (1,5 veces el rango intercuartílico). No elimines ninguno sin antes justificar si es un error o un valor real.
+- Las herramientas del trabajo son R y Claude Code (Anthropic). Obtén las versiones del software desde R, sin escribirlas a mano. Cita únicamente fuentes que puedas verificar.
+[TAREA]
+1. Describe el dataset: tamaño, filas vacías, y variable por variable su tipo en R, su tipo estadístico, sus faltantes y sus valores distintos. Señala las diferencias entre el diccionario y el archivo.
+2. Compara los productos (créditos, porcentaje, tasa mediana y valor mediano de la vivienda) y construye un gráfico de barras que justifique trabajar solo con el NCMV.
+3. Limpia los datos y muestra cuántas filas salen en cada paso, incluidos los duplicados por producto.
+4. Valida la consistencia: faltantes, montos y tasas no positivos, plazos, cuota inicial, financiamiento, créditos cuya suma con la cuota inicial supere el valor de la vivienda y fechas fuera de 2024.
+5. Transforma y codifica: FECHA, MES, nombres de las IFI y de la provincia de Cañete, TIPO_IFI y ZONA como factores, ZONA_LIMA_CALLAO (1 = Lima y Callao), PLAZO_ANIOS y PCT_CUOTA_INICIAL.
+6. Identifica los atípicos de cada variable numérica, analiza los de TASA por tipo de IFI, lista las tasas más altas y construye diagramas de caja. Decide qué hacer con ellos.
+7. Documenta las herramientas usadas con su versión y su función, el entorno de ejecución y las citas del software.
+8. Exporta la base limpia para las siguientes etapas.
+[FORMATO DE SALIDA]
+Entrega tres productos:
+(a) Un informe en Word (.docx) con los resultados del análisis (tablas y gráficos incluidos). Incluye una sección de referencias en formato APA 7.ª edición, solo con fuentes que puedas verificar.
+(b) El código R completo y ejecutable de principio a fin, organizado en un script de configuración común y un script por cada parte (descripción, limpieza y herramientas), con secciones numeradas. Debe verificar si los paquetes necesarios están instalados y, si no lo están, instalarlos y luego cargarlos, de modo que funcione sin pasos adicionales. Todos los gráficos deben construirse con el paquete ggplot2. Incluye estructuras secuenciales, condicionales y repetitivas, funciones, variables, constantes y arreglos.
+(c) La interpretación de cada resultado dentro del mismo código R, escrita como comentarios (#) inmediatamente después de cada bloque de cálculo o de gráfico.

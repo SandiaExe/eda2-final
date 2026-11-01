@@ -1,7 +1,7 @@
 # ============================================================================
-# g1_r2_limpieza_transformacion.R
+# g1_2_limpieza_transformacion.R
 # g-i. Preparación y exploración de datos
-# r2. Limpieza, transformación y codificación
+# Parte 2. Limpieza, transformación y codificación
 # ============================================================================
 
 source("codigo/00_configuracion.R")

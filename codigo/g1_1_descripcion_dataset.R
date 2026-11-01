@@ -1,7 +1,7 @@
 # ============================================================================
-# g1_r1_descripcion_dataset.R
+# g1_1_descripcion_dataset.R
 # g-i. Preparación y exploración de datos
-# r1. Descripción del dataset (variables, tamaño, tipo de datos)
+# Parte 1. Descripción del dataset (variables, tamaño, tipo de datos)
 # ============================================================================
 
 source("codigo/00_configuracion.R")

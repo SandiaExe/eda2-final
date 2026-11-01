@@ -21,3 +21,9 @@ Wickham H, Pedersen T, Seidel D (2025). _scales: Scale Functions for
 Visualization_. doi:10.32614/CRAN.package.scales
 <https://doi.org/10.32614/CRAN.package.scales>. R package version
 1.4.0, <https://CRAN.R-project.org/package=scales>.
+Meyer D, Dimitriadou E, Hornik K, Weingessel A, Leisch F (2025).
+_e1071: Misc Functions of the Department of Statistics, Probability
+Theory Group (Formerly: E1071), TU Wien_.
+doi:10.32614/CRAN.package.e1071
+<https://doi.org/10.32614/CRAN.package.e1071>. R package version
+1.7-17, <https://CRAN.R-project.org/package=e1071>.

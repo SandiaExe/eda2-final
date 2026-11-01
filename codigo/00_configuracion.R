@@ -5,14 +5,14 @@
 #
 # Todos los scripts cargan este archivo. Deben ejecutarse con la carpeta raíz
 # del proyecto como directorio de trabajo, por ejemplo:
-#   Rscript codigo/g1_r1_descripcion_dataset.R
+#   Rscript codigo/g1_1_descripcion_dataset.R
 # ============================================================================
 
 
 # ----------------------------------------------------------------------------
 # 1. Paquetes
 # ----------------------------------------------------------------------------
-PAQUETES <- c("readr", "dplyr", "tidyr", "ggplot2", "scales")
+PAQUETES <- c("readr", "dplyr", "tidyr", "ggplot2", "scales", "e1071")
 
 # Instala los paquetes que falten y luego los carga.
 instalar_y_cargar <- function(paquetes) {
@@ -34,6 +34,7 @@ instalar_y_cargar(PAQUETES)
 ARCHIVO_CSV    <- "Colocaciones_de_crédito_Mivivienda_2024.csv"
 DIR_SALIDAS    <- "salidas"
 DIR_G1         <- file.path(DIR_SALIDAS, "g1")
+DIR_G2         <- file.path(DIR_SALIDAS, "g2")
 DIR_DATOS      <- file.path(DIR_SALIDAS, "datos")
 ARCHIVO_LIMPIO <- file.path(DIR_DATOS, "ncmv_2024_limpio.csv")
 
@@ -64,8 +65,12 @@ ETIQUETAS_VARIABLES <- c(TASA = "Tasa (%)", MONTO_CREDITO = "Crédito (S/)",
                          MONTO_VALOR_VIVIENDA = "Vivienda (S/)")
 
 # Colores de los gráficos
-COLOR_PRINCIPAL <- "#1F6F8B"
-COLOR_ATIPICO   <- "#C8553D"
+COLOR_PRINCIPAL  <- "#2a78d6"
+COLOR_ATIPICO    <- "#eb6834"
+COLOR_REFERENCIA <- "#52514e"
+COLORES_TIPO_IFI <- c(Banco = "#2a78d6", CMAC = "#eb6834",
+                      Financiera = "#1baf7a", Edpyme = "#eda100")
+COLORES_ZONA     <- c("Lima y Callao" = "#2a78d6", "Resto del país" = "#eb6834")
 
 
 # ----------------------------------------------------------------------------
@@ -84,6 +89,14 @@ leer_datos_crudos <- function(ruta = ARCHIVO_CSV) {
     ),
     show_col_types = FALSE
   )
+}
+
+# Lee la base limpia generada en g-i y restablece los factores.
+leer_datos_limpios <- function(ruta = ARCHIVO_LIMPIO) {
+  read_csv(ruta, col_types = cols(UBIGEO = col_character()),
+           show_col_types = FALSE) %>%
+    mutate(TIPO_IFI = factor(TIPO_IFI, levels = NIVELES_TIPO_IFI),
+           ZONA = factor(ZONA, levels = c(ZONA_LIMA, ZONA_RESTO)))
 }
 
 # Identifica las filas en las que todas las columnas están vacías.

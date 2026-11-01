@@ -1,7 +1,7 @@
 # ============================================================================
-# g1_r3_herramientas.R
+# g1_3_herramientas.R
 # g-i. Preparación y exploración de datos
-# r3. Herramientas utilizadas: R e Inteligencia Artificial
+# Parte 3. Herramientas utilizadas: R e Inteligencia Artificial
 # ============================================================================
 
 source("codigo/00_configuracion.R")
@@ -15,7 +15,8 @@ USO_PAQUETE <- c(
   dplyr   = "Filtrado, transformación y resumen de datos",
   tidyr   = "Reorganización de datos para gráficos",
   ggplot2 = "Construcción de todos los gráficos",
-  scales  = "Formato de los ejes numéricos"
+  scales  = "Formato de los ejes numéricos",
+  e1071   = "Cálculo de la asimetría y la curtosis"
 )
 
 herramientas_r <- vector("list", length(PAQUETES) + 1)
@@ -46,8 +47,8 @@ herramienta_ia <- tibble(
 tabla_herramientas <- bind_rows(bind_rows(herramientas_r), herramienta_ia)
 guardar_tabla(tabla_herramientas, "t12_herramientas")
 
-# Interpretación: el análisis se realiza en R 4.6.1 con cinco paquetes. La IA apoya
-# la generación del código a partir de un prompt por cada parte; los resultados se
+# Interpretación: el análisis se realiza en R 4.6.1 con seis paquetes. La IA apoya
+# la generación del código a partir de un prompt por cada etapa; los resultados se
 # verifican al ejecutar los scripts sobre los datos y la interpretación es
 # responsabilidad del equipo.
 
