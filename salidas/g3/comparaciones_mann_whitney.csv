@@ -1,0 +1,7 @@
+comparacion,valor_p_ajustado,significativa
+CMAC - Banco,"< 0,001",TRUE
+Financiera - Banco,"< 0,001",TRUE
+Edpyme - Banco,"< 0,001",TRUE
+Financiera - CMAC,"< 0,001",TRUE
+Edpyme - CMAC,"< 0,001",TRUE
+Edpyme - Financiera,"< 0,001",TRUE

@@ -1,0 +1,3 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE4,ANOVA de un factor: tasa según tipo de IFI,las medias de los cuatro tipos son iguales,3850.747,3,"< 0,001",NA,NA,Se rechaza H0
+OE4,Kruskal-Wallis: tasa según tipo de IFI,las distribuciones de los cuatro tipos son iguales,2014.879,3,"< 0,001",NA,NA,Se rechaza H0

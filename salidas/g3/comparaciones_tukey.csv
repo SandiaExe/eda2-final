@@ -1,0 +1,7 @@
+comparacion,diferencia,ic95_inferior,ic95_superior,valor_p_ajustado,significativa
+CMAC-Banco,3.402,3.319,3.485,"< 0,001",TRUE
+Financiera-Banco,0.754,0.642,0.866,"< 0,001",TRUE
+Edpyme-Banco,1.311,1.144,1.478,"< 0,001",TRUE
+Financiera-CMAC,-2.648,-2.783,-2.513,"< 0,001",TRUE
+Edpyme-CMAC,-2.091,-2.274,-1.908,"< 0,001",TRUE
+Edpyme-Financiera,0.557,0.359,0.755,"< 0,001",TRUE
