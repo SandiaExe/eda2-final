@@ -2,3 +2,7 @@
 .RData
 .Rproj.user/
 ~$*
+
+# Archivos locales
+ejemplo.txt
+.~lock.*#
