@@ -1,0 +1,26 @@
+[ROL]
+Actúa como científico/a de datos con experiencia docente universitaria, especializado/a en análisis reproducible y en la documentación del software usado en R.
+
+[CONTEXTO]
+Un equipo universitario analiza las colocaciones del Nuevo Crédito Mivivienda de 2024 del Fondo MIVIVIENDA S.A. en el curso Análisis Exploratorio de Datos II. La guía del trabajo pide declarar las herramientas utilizadas: R e Inteligencia Artificial. Esta es la parte «Herramientas utilizadas» de la etapa «Preparación y exploración de datos».
+
+[DATOS]
+No se requiere ningún conjunto de datos. Utiliza el script adjunto «codigo/00_configuracion.R», ya creado, que define el vector PAQUETES (readr, dplyr, tidyr, ggplot2, scales), la constante DIR_G1 y la función guardar_tabla().
+
+[SUPUESTOS]
+- Las versiones deben obtenerse del entorno de ejecución con funciones de R; no las escribas a mano.
+- La herramienta de IA es Claude Code (Anthropic), con los modelos Claude Sonnet 5.5 y Claude Opus 5.5. Su uso es la generación asistida del código en R a partir de los prompts guardados en la carpeta «prompts/».
+- Las citas se obtienen con la función citation() de R. Cita únicamente fuentes que puedas verificar.
+
+[TAREA]
+1. Crea el script «codigo/g1_r3_herramientas.R» y, con un bucle sobre PAQUETES, construye una tabla con la herramienta, su versión y su uso en el proyecto, comenzando por R.
+2. Agrega a la tabla la herramienta de IA y describe su función.
+3. Registra en una tabla el sistema operativo, la plataforma y la fecha de ejecución.
+4. Con un bucle, reúne las citas de R y de cada paquete y guárdalas en «salidas/g1/citas_software.txt».
+5. Comenta qué aporta cada herramienta y por qué conviene registrar las versiones.
+
+[FORMATO DE SALIDA]
+Entrega tres productos:
+(a) El código R completo y ejecutable de principio a fin desde la carpeta raíz del proyecto, dividido en secciones numeradas con encabezados de comentario. Debe cargar la configuración común, que verifica si los paquetes necesarios están instalados y, si no lo están, los instala y luego los carga, de modo que funcione sin pasos adicionales. Debe usar estructuras secuenciales, condicionales y repetitivas, funciones, variables, constantes y arreglos.
+(b) Las tablas en CSV y el archivo de citas, guardados en «salidas/g1/».
+(c) La interpretación de cada resultado dentro del mismo código R, escrita como comentarios (#) inmediatamente después de cada bloque de cálculo, en español.
