@@ -1,0 +1,2 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE5,Chi-cuadrado de independencia: tipo de IFI y zona,el tipo de IFI y la zona son independientes,900.453,3,"< 0,001",NA,NA,Se rechaza H0
