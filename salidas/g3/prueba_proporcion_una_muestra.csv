@@ -1,0 +1,2 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE2,z para una proporción: créditos fuera de Lima y Callao,"p = 0,6433",-62.078,NA,"< 0,001",0.312,0.332,Se rechaza H0

@@ -35,8 +35,10 @@ ARCHIVO_CSV    <- "Colocaciones_de_crédito_Mivivienda_2024.csv"
 DIR_SALIDAS    <- "salidas"
 DIR_G1         <- file.path(DIR_SALIDAS, "g1")
 DIR_G2         <- file.path(DIR_SALIDAS, "g2")
+DIR_G3         <- file.path(DIR_SALIDAS, "g3")
 DIR_DATOS      <- file.path(DIR_SALIDAS, "datos")
 ARCHIVO_LIMPIO <- file.path(DIR_DATOS, "ncmv_2024_limpio.csv")
+ARCHIVO_BCRP   <- "datos/bcrp_tasa_hipotecaria_mn_2024.csv"
 
 # Parámetros estadísticos
 ALFA            <- 0.05

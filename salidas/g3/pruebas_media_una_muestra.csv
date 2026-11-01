@@ -1,0 +1,7 @@
+objetivo,prueba,hipotesis_nula,estadistico,gl,valor_p,ic95_inferior,ic95_superior,decision
+OE2,"t para una muestra: BCRP, promedio 2024 (saldos)","media = 7,353",182.7,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: BCRP, promedio 2024 (saldos)","mediana = 7,353",36683285,NA,"< 0,001",NA,NA,Se rechaza H0
+OE2,"t para una muestra: SBS, enero de 2024","media = 9,100",52.023,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: SBS, enero de 2024","mediana = 9,100",28712644.5,NA,"< 0,001",NA,NA,Se rechaza H0
+OE2,"t para una muestra: SBS, octubre de 2024","media = 8,400",104.387,8564,"< 0,001",9.769,9.822,Se rechaza H0
+OE2,"Wilcoxon para una muestra: SBS, octubre de 2024","mediana = 8,400",36493938.5,NA,"< 0,001",NA,NA,Se rechaza H0

@@ -1,0 +1,5 @@
+condicion,valor,cumple
+n * p0,5510,TRUE
+n * (1 - p0),3055,TRUE
+n * p estimada,2758,TRUE
+n * (1 - p estimada),5807,TRUE
