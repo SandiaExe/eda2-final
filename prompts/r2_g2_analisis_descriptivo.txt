@@ -18,8 +18,8 @@ Utiliza el archivo adjunto «ncmv_2024_limpio.csv». Es un archivo CSV (separado
 
 [SUPUESTOS]
 - Cada fila es un crédito. Los valores atípicos se conservan porque son créditos reales.
-- En las tablas de frecuencia de variables cuantitativas usa la regla de Sturges. Agrupa en «Otros» los departamentos fuera de los diez primeros.
-- Calcula la asimetría y la curtosis (como exceso sobre 0) con los estimadores muestrales ajustados. Interpreta la asimetría con la convención de Bulmer (1979): menos de 0,5 en valor absoluto, aproximadamente simétrica; de 0,5 a 1, moderada; más de 1, fuerte (aclara que es una convención).
+- Las tablas de frecuencia de variables cuantitativas usan la regla de Sturges. Los departamentos fuera de los diez primeros se agrupan en «Otros».
+- La asimetría y la curtosis (como exceso sobre 0) se calculan con los estimadores muestrales ajustados. Interpreta la asimetría con la convención de Bulmer (1979): menos de 0,5 en valor absoluto, aproximadamente simétrica; de 0,5 a 1, moderada; más de 1, fuerte (aclara que es una convención).
 - Usa solo técnicas descriptivas; deja las pruebas de hipótesis para la siguiente etapa.
 - Una diferencia descriptiva no implica causalidad. Si un dato no explica un resultado, dilo y no supongas una causa. Cita únicamente fuentes que puedas verificar.
 [TAREA]
