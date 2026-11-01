@@ -1,0 +1,6 @@
+variable,forma,apuntamiento,medida_central
+TASA,asimetría fuerte positiva,leptocúrtica,mediana
+MONTO_CREDITO,aproximadamente simétrica,platicúrtica,media
+MONTO_CUOTA_INICIAL,asimetría fuerte positiva,leptocúrtica,mediana
+PLAZOS,asimetría moderada negativa,platicúrtica,mediana
+MONTO_VALOR_VIVIENDA,aproximadamente simétrica,platicúrtica,media

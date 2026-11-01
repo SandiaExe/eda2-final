@@ -1,0 +1,37 @@
+[ROL]
+Actúa como estadístico/a y científico/a de datos con experiencia docente universitaria, especializado/a en estadística descriptiva y visualización de datos en R.
+[CONTEXTO]
+El Fondo MIVIVIENDA S.A. (FMV) canaliza créditos hipotecarios a través de instituciones financieras intermediarias (IFI). Queremos caracterizar las colocaciones del Nuevo Crédito Mivivienda (NCMV) de 2024 antes de pasar a la inferencia, con énfasis en la tasa de interés y en cómo cambia según el tipo de IFI y la zona geográfica. Los datos son reales y públicos, y ya pasaron por la etapa de preparación.
+
+[DATOS]
+Utiliza el archivo adjunto «ncmv_2024_limpio.csv». Es un archivo CSV (separador coma, con fila de encabezado) con 8 565 filas y 17 columnas. Las principales son:
+- TASA (numérica continua): Tasa de interés del crédito (%).
+- MONTO_CREDITO (numérica continua): Monto del crédito (soles).
+- MONTO_CUOTA_INICIAL (numérica continua): Cuota inicial (soles).
+- PLAZOS (numérica discreta): Plazo del crédito (meses).
+- MONTO_VALOR_VIVIENDA (numérica continua): Valor de la vivienda (soles).
+- TIPO_IFI (cualitativa nominal): Banco, CMAC, Financiera o Edpyme.
+- ZONA (cualitativa nominal): Lima y Callao / Resto del país.
+- IFI (cualitativa nominal): Entidad que otorgó el crédito.
+- DEPARTAMENTO (cualitativa nominal): Departamento de la vivienda.
+- MES (entero): Mes del desembolso, de 1 a 12.
+
+[SUPUESTOS]
+- Cada fila es un crédito. Los valores atípicos se conservan porque son créditos reales.
+- En las tablas de frecuencia de variables cuantitativas usa la regla de Sturges. Agrupa en «Otros» los departamentos fuera de los diez primeros.
+- Calcula la asimetría y la curtosis (como exceso sobre 0) con los estimadores muestrales ajustados. Interpreta la asimetría con la convención de Bulmer (1979): menos de 0,5 en valor absoluto, aproximadamente simétrica; de 0,5 a 1, moderada; más de 1, fuerte (aclara que es una convención).
+- Usa solo técnicas descriptivas; deja las pruebas de hipótesis para la siguiente etapa.
+- Una diferencia descriptiva no implica causalidad. Si un dato no explica un resultado, dilo y no supongas una causa. Cita únicamente fuentes que puedas verificar.
+[TAREA]
+1. Construye tablas de frecuencia (absoluta, relativa y acumuladas) de TIPO_IFI, ZONA, IFI, DEPARTAMENTO, MES y de las cinco variables cuantitativas.
+2. Construye un gráfico de sectores de TIPO_IFI y gráficos de barras por entidad, departamento y mes.
+3. Construye un histograma de cada variable cuantitativa con su media y su mediana, y diagramas de caja de la tasa por tipo de IFI y por zona.
+4. Calcula las medidas de tendencia central (media, mediana y moda), de dispersión (rango, varianza, desviación estándar y coeficiente de variación), de posición (P10, Q1, Q3, P90 y rango intercuartílico), la asimetría y la curtosis, en general y por tipo de IFI y zona.
+5. Clasifica cada variable según su asimetría y su curtosis, e indica qué medida central la representa mejor.
+6. Interpreta los resultados variable por variable.
+7. Analiza la tasa según tipo de IFI y zona en conjunto: tasa media por combinación, brecha entre zonas dentro de cada tipo de IFI y composición de tipos de IFI por zona. Comenta si el tipo de IFI podría explicar parte de la brecha entre zonas.
+[FORMATO DE SALIDA]
+Entrega tres productos:
+(a) Un informe en Word (.docx) con los resultados del análisis (tablas y gráficos incluidos). Incluye una sección de referencias en formato APA 7.ª edición, solo con fuentes que puedas verificar.
+(b) El código R completo y ejecutable de principio a fin, con un script por cada parte (frecuencias y gráficos, medidas descriptivas e interpretación por variable), con secciones numeradas. Debe verificar si los paquetes necesarios están instalados y, si no lo están, instalarlos y luego cargarlos, de modo que funcione sin pasos adicionales. Todos los gráficos deben construirse con el paquete ggplot2. Incluye estructuras secuenciales, condicionales y repetitivas, funciones, variables, constantes y arreglos.
+(c) La interpretación de cada resultado dentro del mismo código R, escrita como comentarios (#) inmediatamente después de cada bloque de cálculo o de gráfico.
