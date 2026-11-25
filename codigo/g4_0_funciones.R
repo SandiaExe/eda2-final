@@ -2,7 +2,7 @@
 # g4_0_funciones.R - g-iv. Modelos de regresión: funciones comunes
 # ============================================================================
 source("codigo/00_configuracion.R", encoding = "UTF-8")
-PAQUETES_G4 <- c("broom", "car", "lmtest", "sandwich")
+PAQUETES_G4 <- c("broom", "car", "lmtest", "sandwich", "clubSandwich")
 instalar_y_cargar(PAQUETES_G4)
 SEMILLA <- 2026
 ESCALA_MONTO <- 10000
