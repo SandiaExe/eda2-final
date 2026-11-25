@@ -1,0 +1,12 @@
+variable,uso,motivo
+TASA,Respuesta,OE6
+MONTO_CREDITO,M1-M4,OE6; escala S/ 10000
+PLAZOS,M2-M4 (años),OE6
+MONTO_CUOTA_INICIAL,M2-M4,OE6; escala S/ 10000
+TIPO_IFI,M3-M4,OE6; referencia Banco
+ZONA,M4,OE6; referencia Lima y Callao
+MONTO_VALOR_VIVIENDA,Excluida,Redundancia potencial con crédito
+IFI,Diagnóstico,Agrupación institucional
+PLAZO_ANIOS,Transformación,Equivalente a PLAZOS
+ZONA_LIMA_CALLAO,Excluida,Equivalente a ZONA
+PCT_CUOTA_INICIAL,Exploración,Derivada de montos
