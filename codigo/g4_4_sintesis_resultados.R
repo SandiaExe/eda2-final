@@ -29,8 +29,7 @@ m <- modelos$M4
 tabla_g4(coef_g4(m, TRUE) %>% mutate(modelo = "M4", alcance = "Asociación ajustada; HC3; no causal"), "sintesis_regresion")
 interpretar_g4(m, "M4")
 cat(sprintf("Brecha bruta: %.4f pp; ajustada: %.4f pp.\n", brecha$estimate[1], brecha$estimate[2]))
-paquetes <- c(PAQUETES, PAQUETES_G4)
-if (requireNamespace("clubSandwich", quietly = TRUE)) paquetes <- c(paquetes, "clubSandwich")
+paquetes <- unique(c(PAQUETES, PAQUETES_G4))
 tabla_g4(tibble(paquete = paquetes, version = sapply(paquetes, function(p) as.character(packageVersion(p)))), "versiones_paquetes_g4")
 writeLines(c(capture.output(sessionInfo()), "IA: ChatGPT (OpenAI); prompt R4 en prompts/."), file.path(DIR_G4, "entorno_g4.txt"))
 # Limitaciones: registros administrativos 2024, variables de riesgo ausentes y posible dependencia por IFI.
