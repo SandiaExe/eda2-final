@@ -1,0 +1,2 @@
+modelo,n,R2,R2_ajustado,error_estandar_residual,F,gl1,gl2,valor_p,decision
+Simple,8565,0.308,0.3079,1.0292,3811,1,8563,"< 0,001",Se rechaza H0
