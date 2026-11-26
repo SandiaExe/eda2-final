@@ -1,0 +1,5 @@
+supuesto,verificacion,cumple
+Linealidad,Diagrama de dispersión y residuos frente a ajustados,Aproximadamente
+Independencia,Diseño de los datos: cada crédito es un registro distinto,"Sí, con reserva por IFI"
+Normalidad de los residuos,Shapiro-Wilk y gráfico Q-Q,No
+Varianza constante de los residuos,Levene entre grupos de valores ajustados,No

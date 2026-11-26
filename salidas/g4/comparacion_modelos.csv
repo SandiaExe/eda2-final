@@ -1,0 +1,3 @@
+modelo,R2,R2_ajustado,error_estandar_residual,F,gl1,gl2,valor_p
+Simple,0.308,0.3079,1.0292,3811,1,8563,"< 0,001"
+Múltiple,0.6766,0.6764,0.7038,2984.49,6,8558,"< 0,001"
