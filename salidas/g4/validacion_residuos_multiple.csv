@@ -1,0 +1,2 @@
+modelo,W,p_normalidad,cumple_normalidad,F_levene,p_levene,cumple_homogeneidad,residuos_extremos,pct_extremos
+Múltiple,0.905,"< 0,001",FALSE,363.21,"< 0,001",FALSE,95,1.11

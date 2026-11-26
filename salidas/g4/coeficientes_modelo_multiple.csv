@@ -1,0 +1,8 @@
+modelo,termino,coeficiente,error_estandar,t,valor_p,ic95_inferior,ic95_superior,decision
+Múltiple,Intercepto,10.3671,0.0376,275.83,"< 0,001",10.2935,10.4408,Se rechaza H0
+Múltiple,Crédito (S/ 10 000),-0.0302,0.0014,-22.32,"< 0,001",-0.0328,-0.0275,Se rechaza H0
+Múltiple,Plazo (años),-0.0232,0.0017,-13.91,"< 0,001",-0.0265,-0.02,Se rechaza H0
+Múltiple,CMAC,2.6588,0.0317,83.92,"< 0,001",2.5967,2.7209,Se rechaza H0
+Múltiple,Financiera,0.5121,0.0387,13.24,"< 0,001",0.4363,0.588,Se rechaza H0
+Múltiple,Edpyme,0.9537,0.0577,16.52,"< 0,001",0.8405,1.0669,Se rechaza H0
+Múltiple,Resto del país,0.4474,0.0193,23.24,"< 0,001",0.4097,0.4851,Se rechaza H0
