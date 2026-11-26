@@ -26,6 +26,7 @@ Las tablas y los gráficos se regeneran en `salidas/`.
 ## Contenido
 
 - `Avance_01_EDAII.docx`, `Avance_02_EDAII.docx` e `Informe_Final_EDAII.docx`: informes.
+- `Presentacion_Final_EDAII.pptx`: diapositivas de la exposición.
 - `codigo/`: scripts en R. Se ejecutan en orden: g1 prepara los datos, g2 los describe, g3 hace la inferencia y g4 ajusta los modelos de regresión.
 - `prompts/`: prompts r1, r2, r3 y r4, uno por cada etapa.
 - `salidas/`: tablas (CSV), gráficos (PNG) y la base limpia.
