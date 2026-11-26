@@ -78,7 +78,7 @@ guardar_grafico(grafico_diferencias, "f27_diferencias_brutas_ajustadas", alto = 
 # desaparece y ningún intervalo incluye el cero:
 # - Zona: la brecha entre el resto del país y Lima y Callao baja de 1,290 a 0,447
 #   puntos (65 % menos). La mayor parte de la brecha se relaciona con que fuera de
-#   Lima predominan las CMAC (OE5) y los créditos más pequeños y cortos (g-ii).
+#   Lima se concentran las CMAC (OE5) y los créditos más pequeños y cortos (g-ii).
 # - CMAC frente a banco: baja de 3,402 a 2,659 puntos (22 % menos). Sigue siendo la
 #   mayor diferencia, aun comparando créditos de igual monto, plazo y zona.
 # - Financiera y Edpyme: bajan de 0,754 a 0,512 y de 1,311 a 0,954 puntos.

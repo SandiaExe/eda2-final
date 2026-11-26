@@ -130,6 +130,8 @@ guardar_grafico <- function(grafico, nombre, ancho = 8, alto = 5,
   ggsave(file.path(directorio, paste0(nombre, ".png")),
          grafico + labs(title = NULL),
          width = ancho, height = alto, dpi = 300, bg = "white")
+  # En RStudio, muestra además el gráfico en el panel Plots.
+  if (interactive()) print(grafico)
 }
 
 # Tema común para todos los gráficos.
