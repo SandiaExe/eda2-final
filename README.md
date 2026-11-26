@@ -17,7 +17,7 @@ cd eda2-final
 Abre R en esa carpeta (debe ser el directorio de trabajo) y ejecuta todos los scripts en orden:
 
 ```r
-scripts <- sort(list.files("codigo", "^g[123]_[1-5]", full.names = TRUE))
+scripts <- sort(list.files("codigo", "^g[1-4]_[1-5]", full.names = TRUE))
 for (s in scripts) source(s, local = new.env(), encoding = "UTF-8")
 ```
 
@@ -26,8 +26,8 @@ Las tablas y los gráficos se regeneran en `salidas/`.
 ## Contenido
 
 - `Avance_01_EDAII.docx` y `Avance_02_EDAII.docx`: informes.
-- `codigo/`: scripts en R. Se ejecutan en orden: g1 prepara los datos, g2 los describe y g3 hace la inferencia.
-- `prompts/`: prompts r1, r2 y r3, uno por cada etapa.
+- `codigo/`: scripts en R. Se ejecutan en orden: g1 prepara los datos, g2 los describe, g3 hace la inferencia y g4 ajusta los modelos de regresión.
+- `prompts/`: prompts r1, r2, r3 y r4, uno por cada etapa.
 - `salidas/`: tablas (CSV), gráficos (PNG) y la base limpia.
 - `Colocaciones_de_crédito_Mivivienda_2024.csv` y su diccionario (`.xlsx`): datos originales del Fondo MIVIVIENDA.
 - `datos/`: serie de la tasa hipotecaria del BCRP.
